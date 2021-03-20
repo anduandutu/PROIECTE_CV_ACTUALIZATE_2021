@@ -1,0 +1,107 @@
+﻿Build started 31-Jan-19 11:50:39 PM.
+     1>Project "C:\Users\Andrei\Desktop\PROIECT POO\Proiect_ POO_v2\Proiect POO\Proiect - POO\Proiect - POO.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Configuration.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Autentificare_Login.cpp Vizualizare_studenti_validati.cpp
+         Autentificare_Login.cpp
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Autentificare_Login.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Utilizatori_clasa.h(38): warning C4101: 'reader' : unreferenced local variable
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Studenti.h(68): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(455): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(461): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(468): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(475): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(482): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(488): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(493): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(623): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(624): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(625): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(626): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(627): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(629): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(630): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(631): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(632): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(634): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(635): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(636): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(637): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(639): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(640): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(641): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(642): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(656): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(663): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(664): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(665): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Contract_studenti.h(666): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(536): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(537): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(538): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(539): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(540): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(541): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(542): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(543): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(544): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(545): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(547): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(548): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(549): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(550): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(551): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(552): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(553): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(554): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(555): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(570): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(576): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_info_student.h(577): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Afisare_info_stud_pt_admin.h(136): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Administrare_situatie_studenti.h(409): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Administrare_situatie_studenti.h(423): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_studenti_validati.h(537): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_studenti_validati.h(546): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_studenti_validati.h(547): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_studenti_validati.h(553): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         Vizualizare_studenti_validati.cpp
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_studenti_validati.h(537): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_studenti_validati.h(546): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_studenti_validati.h(547): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Vizualizare_studenti_validati.h(553): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         Generating Code...
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\contract_studenti.h(527): warning C4700: uninitialized local variable 'c1_1' used
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\contract_studenti.h(530): warning C4700: uninitialized local variable 'c1_2' used
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\contract_studenti.h(533): warning C4700: uninitialized local variable 'c2_1' used
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\contract_studenti.h(536): warning C4700: uninitialized local variable 'c2_2' used
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\contract_studenti.h(539): warning C4700: uninitialized local variable 'c3_1' used
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\contract_studenti.h(542): warning C4700: uninitialized local variable 'c3_2' used
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\contract_studenti.h(545): warning C4700: uninitialized local variable 'c4_1' used
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\contract_studenti.h(548): warning C4700: uninitialized local variable 'c4_2' used
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\contract_studenti.h(551): warning C4700: uninitialized local variable 'c5_1' used
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\contract_studenti.h(554): warning C4700: uninitialized local variable 'c5_2' used
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\contract_studenti.h(557): warning C4700: uninitialized local variable 'c6_1' used
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\contract_studenti.h(560): warning C4700: uninitialized local variable 'c6_2' used
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Andrei\Desktop\PROIECT POO\Proiect_ POO_v2\Proiect POO\Release\Proiect - POO.exe" /INCREMENTAL:NO /NOLOGO /ASSEMBLYRESOURCE:Release\ProiectPOO.Administrare_situatie_studenti.resources /ASSEMBLYRESOURCE:Release\ProiectPOO.Afisare_info_stud_pt_admin.resources /ASSEMBLYRESOURCE:Release\ProiectPOO.Alegere_Materii.resources /ASSEMBLYRESOURCE:Release\ProiectPOO.Autentificare_Login.resources /ASSEMBLYRESOURCE:Release\ProiectPOO.Contract_studenti.resources /ASSEMBLYRESOURCE:Release\ProiectPOO.Editare_materii.resources /ASSEMBLYRESOURCE:Release\ProiectPOO.Forma_principala.resources /ASSEMBLYRESOURCE:Release\ProiectPOO.Logare_Admin.resources /ASSEMBLYRESOURCE:Release\ProiectPOO.Login.resources /ASSEMBLYRESOURCE:Release\ProiectPOO.Profesori.resources /ASSEMBLYRESOURCE:Release\ProiectPOO.Profesori_Logare.resources /ASSEMBLYRESOURCE:Release\ProiectPOO.VizualizareCatalogStudenti.resources /ASSEMBLYRESOURCE:Release\ProiectPOO.VizualizareMateriiPredate.resources /ASSEMBLYRESOURCE:Release\ProiectPOO.Vizualizare_info_student.resources /ASSEMBLYRESOURCE:Release\ProiectPOO.Vizualizare_studenti_validati.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Andrei\Desktop\PROIECT POO\Proiect_ POO_v2\Proiect POO\Release\Proiect - POO.pdb" /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /SAFESEH Release\Administrare_situatie_studenti.obj
+         Release\Afisare_info_stud_pt_admin.obj
+         Release\Alegere_Materii.obj
+         Release\Autentificare_Login.obj
+         Release\Contract_studenti.obj
+         Release\Editare_materii.obj
+         Release\Forma_principala.obj
+         Release\Logare_Admin.obj
+         Release\Login.obj
+         Release\Profesori.obj
+         Release\Profesori_Logare.obj
+         Release\VizualizareCatalogStudenti.obj
+         Release\VizualizareMateriiPredate.obj
+         Release\Vizualizare_info_student.obj
+         Release\Vizualizare_studenti_validati.obj
+         "Release\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         Proiect - POO.vcxproj -> C:\Users\Andrei\Desktop\PROIECT POO\Proiect_ POO_v2\Proiect POO\Release\Proiect - POO.exe
+     1>Done Building Project "C:\Users\Andrei\Desktop\PROIECT POO\Proiect_ POO_v2\Proiect POO\Proiect - POO\Proiect - POO.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.78

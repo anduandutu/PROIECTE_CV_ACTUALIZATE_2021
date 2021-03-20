@@ -1,0 +1,32 @@
+﻿Build started 17-Jan-19 12:46:06 PM.
+     1>Project "C:\Users\Andrei\Desktop\PROIECT POO\Proiect_ POO_v2\Proiect POO\Proiect - POO\Proiect - POO.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Autentificare_Login.cpp Profesori_Logare.cpp VizualizareMateriiPredate.cpp
+         Autentificare_Login.cpp
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Autentificare_Login.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Utilizatori_clasa.h(37): warning C4101: 'reader' : unreferenced local variable
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Studenti.h(57): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+     1>c:\users\andrei\desktop\proiect poo\proiect_ poo_v2\proiect poo\proiect - poo\Afisare_info_stud_pt_admin.h(105): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+         Profesori_Logare.cpp
+         VizualizareMateriiPredate.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Andrei\Desktop\PROIECT POO\Proiect_ POO_v2\Proiect POO\Debug\Proiect - POO.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\ProiectPOO.Afisare_info_stud_pt_admin.resources /ASSEMBLYRESOURCE:Debug\ProiectPOO.Alegere_Materii.resources /ASSEMBLYRESOURCE:Debug\ProiectPOO.Autentificare_Login.resources /ASSEMBLYRESOURCE:Debug\ProiectPOO.Contract_studenti.resources /ASSEMBLYRESOURCE:Debug\ProiectPOO.Editare_materii.resources /ASSEMBLYRESOURCE:Debug\ProiectPOO.Forma_principala.resources /ASSEMBLYRESOURCE:Debug\ProiectPOO.Logare_Admin.resources /ASSEMBLYRESOURCE:Debug\ProiectPOO.Login.resources /ASSEMBLYRESOURCE:Debug\ProiectPOO.Profesori.resources /ASSEMBLYRESOURCE:Debug\ProiectPOO.Profesori_Logare.resources /ASSEMBLYRESOURCE:Debug\ProiectPOO.VizualizareMateriiPredate.resources /ASSEMBLYRESOURCE:Debug\ProiectPOO.Vizualizare_info_student.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Andrei\Desktop\PROIECT POO\Proiect_ POO_v2\Proiect POO\Debug\Proiect - POO.pdb" /ASSEMBLYDEBUG /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\Afisare_info_stud_pt_admin.obj
+         Debug\Alegere_Materii.obj
+         Debug\Autentificare_Login.obj
+         Debug\Contract_studenti.obj
+         Debug\Editare_materii.obj
+         Debug\Forma_principala.obj
+         Debug\Logare_Admin.obj
+         Debug\Login.obj
+         Debug\Profesori.obj
+         Debug\Profesori_Logare.obj
+         Debug\VizualizareMateriiPredate.obj
+         Debug\Vizualizare_info_student.obj
+         "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         Proiect - POO.vcxproj -> C:\Users\Andrei\Desktop\PROIECT POO\Proiect_ POO_v2\Proiect POO\Debug\Proiect - POO.exe
+     1>Done Building Project "C:\Users\Andrei\Desktop\PROIECT POO\Proiect_ POO_v2\Proiect POO\Proiect - POO\Proiect - POO.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.76

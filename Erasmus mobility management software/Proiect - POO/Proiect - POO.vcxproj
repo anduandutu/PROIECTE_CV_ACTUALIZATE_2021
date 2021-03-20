@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Admin.h" />
+    <ClInclude Include="Administrare_situatie_studenti.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Afisare_info_stud_pt_admin.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Alegere_Materii.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Autentificare_Login.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Contract_studenti.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Editare_materii.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Forma_principala.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Logare_Admin.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Login.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Profesori.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Profesori_Logare.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Proffessors.h" />
+    <ClInclude Include="Studenti.h" />
+    <ClInclude Include="Utilizatori_clasa.h" />
+    <ClInclude Include="VizualizareCatalogStudenti.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="VizualizareMateriiPredate.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Vizualizare_info_student.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Vizualizare_studenti_validati.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Administrare_situatie_studenti.cpp" />
+    <ClCompile Include="Afisare_info_stud_pt_admin.cpp" />
+    <ClCompile Include="Alegere_Materii.cpp" />
+    <ClCompile Include="Autentificare_Login.cpp" />
+    <ClCompile Include="Contract_studenti.cpp" />
+    <ClCompile Include="Editare_materii.cpp" />
+    <ClCompile Include="Forma_principala.cpp" />
+    <ClCompile Include="Logare_Admin.cpp" />
+    <ClCompile Include="Login.cpp" />
+    <ClCompile Include="Profesori.cpp" />
+    <ClCompile Include="Profesori_Logare.cpp" />
+    <ClCompile Include="VizualizareCatalogStudenti.cpp" />
+    <ClCompile Include="VizualizareMateriiPredate.cpp" />
+    <ClCompile Include="Vizualizare_info_student.cpp" />
+    <ClCompile Include="Vizualizare_studenti_validati.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Administrare_situatie_studenti.resx">
+      <DependentUpon>Administrare_situatie_studenti.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Afisare_info_stud_pt_admin.resx">
+      <DependentUpon>Afisare_info_stud_pt_admin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alegere_Materii.resx">
+      <DependentUpon>Alegere_Materii.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Autentificare_Login.resx">
+      <DependentUpon>Autentificare_Login.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract_studenti.resx">
+      <DependentUpon>Contract_studenti.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editare_materii.resx">
+      <DependentUpon>Editare_materii.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forma_principala.resx">
+      <DependentUpon>Forma_principala.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logare_Admin.resx">
+      <DependentUpon>Logare_Admin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profesori.resx">
+      <DependentUpon>Profesori.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profesori_Logare.resx">
+      <DependentUpon>Profesori_Logare.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VizualizareCatalogStudenti.resx">
+      <DependentUpon>VizualizareCatalogStudenti.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VizualizareMateriiPredate.resx">
+      <DependentUpon>VizualizareMateriiPredate.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vizualizare_info_student.resx">
+      <DependentUpon>Vizualizare_info_student.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vizualizare_studenti_validati.resx">
+      <DependentUpon>Vizualizare_studenti_validati.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C7B2BB71-FE35-4269-93C5-BAC2D8043DEB}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>ProiectPOO</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+      <SubSystem>NotSet</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
