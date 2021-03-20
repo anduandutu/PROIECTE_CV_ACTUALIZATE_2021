@@ -1,0 +1,109 @@
+AUTOR : GHEORGHE V. ANDREI-ALEXANDRU
+EMAIL : andrei.gheorghe901@gmail.com
+
+Scop: Realizarea unui program care monitorizarea conexiunilor remote realizate de un utilizator.
+
+Surse de documentație:
+	a) https://docs.oracle.com/javase/tutorial/essential/io/notification.html - pentru monitorizarea evenimentelor am folosit WatchService API (echivalent inotify)
+	b) cozi de evenimente: pentru a pastra informatiile salvate - https://docs.oracle.com/javase/7/docs/api/java/awt/EventQueue.html
+	c) Arhitectura Client Server ( Socket Programming) - https://www.geeksforgeeks.org/introducing-threads-socket-programming-java/?ref=rp
+	d) Log file - https://examples.javacodegeeks.com/core-java/util/logging/write-log-entries-to-log-file/
+	
+	
+Mod de utilizare:
+	1. Pe un calculator se ruleaza App.java cu arguemntul "server" - cel la care vrem sa ne conectam
+		1.1 De asemenea, aflam ip-ul server-ului pentru a il putea introduce ca data de autentificare
+		1.2 Setam parola ca data de autentificare si asteptam ca un client sa se conecteze
+	2. Pe un alt calculator se ruleaza App.java cu arguemntul "client" - cel care se conecteaza
+		2.1 Se introduce ip-ul calculatorului la care dorim sa ne conectam 
+		2.2 Se introduce parola de autentificare
+	3. In acest moment ar trebui sa putem observa faptul ca suntem pregatiti sa lucram remote pe calculatorul la care ne-am conectat iar orice modificare 
+	   pe remote dektop este monitorizata.
+	4. Pentru oprirea conexiunii, se va opri mai intai server-ul si apoi se va opri conexiunea din partea clientului 
+	   pentru a ne asigura ca toate thread-urile se inchid in mod automat corespunzator
+	
+Functionalitatea aplicației:
+	A. Client Side
+		
+	   Clientul va trebui sa cunoasca ip-ul computer-ului la care se conecteaza , respectiv parola de conectare.
+	   Astfel in fisierul StartClient.java folosesc clasa EventQueue pentru a asocia faptul ca va fi afisat un singur Panel la un moment dat. Astfel se asigura 
+	   un mod de functionare secvential al conexiunii si anume:
+	   
+	   Etapa 1: Asteptare ca input de la utilizator un ip valid. Dacă acesta nu este valid, executia programului este terminata. 
+	   
+	   Etapa 2: Se va trece la aceasta etapa in momentul in care s-a rulat Etapa 1 cu un ip valid. Etapa 2 este cea in care se realizeaza urmatoarele verificari:
+	   			2.1: Se verifica faptul ca ip-ul la care incercam sa ne conectam nu este cumva ip-ul propriu
+	   			
+	   Etapa 3: Daca programul a trecut de Etapa 2, atunci se initializeaza o conexiune (Socket) intre client (cel care se conecteaza) si server (cel la care ne conectam)
+	   			Stabilirea conexiunii, insa , se face pe baza unui mecanism de autentificare bazat pe parola detaliat in cadrul fisierului Authentication.java
+	   			
+	   			Mecanismul de autentificare presupune ca utilizatorul care doreste sa se conecteze remote trebuie sa precizeze si parola cu care vrea sa se conecteze. 
+	   			Aceasta parola este validata automat folosind functiile writeUTF , respectiv readUTF . Folosind writeUTF setam faptul ca in cadrul conexiunii parola este 
+	   			cea introdusa de client ca parola de conectare. Folosind readUTF verificam daca , la iesire, starea conexiunii este valida sau invalida. Daca aceasta este 
+	   			valida, atunci se continua cu Etapa 4. Altfel, programul se va termina aruncand un mesaj de eroare de tipul "Please enter a valid password".
+	   			
+	   Etapa 4: In momentul in care conexiunea a fost validata in totalitate se creeaza un ecran in care se transmit in mod constant "frame-uri" ale ecranului utilizatorului 
+	   			la care ne-am conectat(server) actualizate in cadrul unui container. Pentru realizarea acestui lucru , vom asocia un Thread acestei conexiuni, iar in cadrul
+	   			implementarii metodei run() vom primi si vom actualiza in mod continuu frame-uri transmise de catre server.(Etapa 4.2)
+	   			
+	   			Problematica apare, insa, in momentul in care dorim sa realizam anumite actiuni in mod remote(Ex: Deschiderea unor documente, Miscarea mouse-ului , Inserarea de text) 
+	   			Astfel definim in fisierul Commands.java posibilele comenzi realizate de utilizatorul client dupa cum urmeaza:
+	   			//MOVE_MOUSE(-5), 
+				//PRESS_MOUSE(-1),
+				//RELEASE_KEY(-4),
+				//PRESS_KEY(-3),
+				//RELEASE_MOUSE(-2), pentru fiecare dintre ele fiind asociat cate un identificator in functie de care in momentul in care executam Etapa 4.1(Transmisia Evenimentelor)
+				sa poata fi recunoscute si executate in mod corespunzator pe server. 
+				
+				
+	   			Etapa 4.1: SendEvents.java - in acest fisier sunt definite si tratate cele 5 actiuni de tip KeyPressed, MouseMoved , etc ce seteaza ca inputStream pentru server
+	   			id-urile corespunzatoare evenimentelor asociate. Pentru realizarea acestui lucru folosesc un obiect de tip PrintWriter prin intermediul caruia transmit comenzile catre
+	   			server dar si faptul ca este o actiune asociata cu butoane ale mouse-ului. De altfel si de drept, in aceasta clasa se asculta pentru schimbari ale starii mouse-ului,si,
+	   			prin urmare, se actualizeaza pozitia mouse-ului , starea de tip MouseButton Pressed/Released.
+	   			
+	   			
+	   			Etapa 4.2: In acelasi timp cu transmisia de evenimente, totusi, este nevoie sa ne asiguram ca in momentul in care s-au realizat anumite modificari 
+			   			(Exemplu: modificare de fisiere , creare de fisiere, stergere de fisiere), aceste actiuni pot fi monitorizate, insa cel mai important , "frame-urile"
+			   			transmise catre client vor fi actualizate corespunzator. Astfel, asa cum in mod continuu prin intermediul conexiunii , server-ul transmite "frame-uri" , 
+			   			asa si in partea de client, ele trebuie citite sub forma de byte array ce apoi va fi scris ca imagine si "desenata" pe ecranul clientului care este conectat
+			   			la server. -- fisierul ReceivingScreen.java
+	   			
+	B. Server Side
+	   
+	   Pentru a realiza o conexiune remote este necesar ca un server sa ruleze si sa poata accepta mai multe conexiuni. Realizarea partii de server reprezinta de fapt completarea implementarii 
+	   unui stil arhitectural de proiectare si anume "tip client-server". Astfel, in momentul in care Clientul incearca sa se conecteze cu IP valid si parola, este de asteptat ca verificarea parolei
+	   sa se realizeze in mod automat. Acest lucru impune ca parola sa fie setata in mod automat. Desigur, O abordarea probabil putin mai usoara ar fi fost sa setez o parola implicita cu care 
+	   utilizatorul sa se poata conecta la server. Insa o buna practica este ca aceasta parola sa poata fi schimbata de-a lungul timpului , motiv pentru care am ales ca prima etapa a implementarii 
+	   sa fie de fapt si de drept reprezentata de un prompt al utilizatorului pentru setarea parolei cu care clientii se pot conecta la server. Orice alta parola, pe principiul descris la A-> Etapa 3 
+	   rezulta in terminarea programului pe partea de Client. 
+	   
+	   Etapa 1: Setarea parolei ce asigura conexiunea intre clienti si server.
+	   Etapa 2: Se initializeaza conexiunea cu Clientul apeland constructorului clasei realizate in fisierul InitConnection.java
+	   			In acest moment se foloseste clasa Robot pentru a instantia ecranul ce va fi trimis prin intermediul conexiunii remote catre client. Dimensiunea ecranului, etc se preiau si se seteaza 
+	   			folosind GraphicsEnvironment. Verificarea parolei insa trebuie sa fie realizata si pe partea de Server pentru ca doar in cazul in care un client se conecteaza cu parola setata pentru server, 
+	   			atunci conexiunea este acceptata , validata si prin urmare se poate face trecerea la Etapele 3,4,5,6 ce reprezinta de fapt monitorizarea evenimentelor ce se intampla in cadrul conexiunii remote.
+	   			
+	   Etapa 3: SendScreen.java -- se ocupa de transmisia continua de capturi de ecran catre Client folosind BufferedImages si biblioteca ImageIO. Pentru acest task se aloca un Thread.
+	   Etapa 4: ReceiveEvents.java -- se ocupa cu interpretarea evenimentelor primite de la client. Astfel, in momentul in care pe partea de Client s-a transmis o comanda de tip MouseMove/MousePress etc, 
+	   			ea este scanata si interpretata in mod corespunzator in functie de id-ul alocat corespunzator in Commands.java
+	   			Ex : Pentru un eveniment de tip MousePress:
+	   				case -1:{
+						robot.mousePress(scanner.nextInt());	
+						break;
+					}
+	   Etapa 5: LogData.java -- este o clasa ce prezinta un singur constructor ce se ocupa de scrierea intr-un fisier Log a informatiilor despre tipul de conexiune remote realizata si o identifica in functie de
+	   			portul care este asociat conexiunii in cadrul InitConnection.java
+	   
+	   
+	   Etapa 6: QueueEvents.java -- in cadrul acestei clase se monitorizeaza toate schimbarile realizate de utilizatorul remote in cadrul directoarelor si subdirectoarelor asociate
+	   			Am urmarit sa realizez aceasta functionalitate cu un grad cat mai mare de generalitate si prin urmare am implementat folosind tutorialul din resursa a) o varianta 
+	   			de program care monitorizeaza schimbarile din directoare/subdirectoare in mod recursiv. Desi ar fi fost o varianta mai usoara sa scap de parametrul boolean din constructor,
+	   			am ales sa il mentin pentru a trata toate cazurile posibile , eventual si in care ulterior, un utilizator doreste sa seteze anumite permisiuni pentru oamenii care se conecteaza remote
+	   			
+	   			In implementare , am asociat cate un WatchKey pentru fiecare fisier din fiecare subdirector cautat in mod recursiv folosind "Files.walkFileTree". In momentul in care asocierea tuturor subdirectoarelor
+	   			,respectiv a fisierelor este terminata, se afiseaza mesajul "Scan Complete".
+	   			
+	   			Apoi se incepe metoda de procesare a evenimentelor. Ce face de fapt un WatchKey? Valideaza anumite evenimente de tip ENTRY_CREATE/ENTRY_MODIFY/ENTRY_MODIFY/OVERFLOW asociate cu subdirectoarele /fisierele
+	   			care sunt monitorizate la un moment dat. Desigur, intrucat metoda este recursiva pentru fiecare cheie accesata la un moment dat trebuie sa verificam daca cheia este asociata cu un subdirector sau un fisier.
+	   			
+	   			Daca ea este asociata cu un subdirector, atunci se inregistreaza pentru monitorizare toate fisierele continute de subdirector , iar procedura se repeta.
