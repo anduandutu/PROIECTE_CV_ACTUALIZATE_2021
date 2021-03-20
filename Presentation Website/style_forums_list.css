@@ -1,0 +1,190 @@
+body{ 
+  font: 14px sans-serif;
+  text-align: center; 
+  background-image: url("./background.jpg"); /* The image used */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+
+#main{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.ui-autocomplete-row
+{
+  padding:8px;
+  background-color: #f4f4f4;
+  border-bottom:1px solid #ccc;
+  font-weight:bold;
+}
+.ui-autocomplete-row:hover
+{
+  background-color: #ddd;
+}
+
+.presentation_images{
+	width: 100%;
+	height: 500px;
+}
+
+/* Create two unequal columns that floats next to each other */
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  border: 10px solid #362741;
+  background-color: #362741;
+}
+
+/* Clear floats after the columns */
+.before_menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.link_buttons{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.new_buttons{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.home_page {
+  background-color: gray;
+  border: 0.5px #000;
+  width: 100%;
+}
+
+.main_page {
+  background-color: rgba(10, 10, 10, 0.5);
+  border: 3px solid rgb(40,27,60);
+  padding: 0.5rem;
+  color: #fff;
+}
+
+.post{
+  border : 0.5px solid black;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 230px;
+  background-color: #8189A9;
+
+}
+.p_title{
+  text-align: left;
+  width: 770px;
+  height: 20px;
+  padding: 5px;
+  color: black;
+}
+.p_description{
+  text-align: left;
+  width: 770px;
+  height: 20px;
+  padding: 5px;
+  color: black;
+}
+.p_text{
+  text-align: justify;
+  width: 770px;
+  height: 20px;
+  padding: 5px;
+  margin-top: 10px;
+  color: black;
+}
+
+.post_content a:link, .post_content a:visited{
+  color:white;
+  font-size: 20px;
+  padding-top: 10px;
+  float:right;
+}
+
+.read_more{
+	width : 500px;
+	height : 30px;
+}
+
+.post_dummy{
+	width: 300px;
+	height: 200px;
+	margin-right: 10px;
+  margin-bottom: 5px;
+	float: left;
+}
+.path{
+	text-align: left;
+}
+.read_more_buttons{
+  color: white;
+  font-size: 22px;
+}
+.carousel {
+  background: #512DA8; }
+  .carousel .carousel-item {
+    height: 300px; }
+    .carousel .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 300px; }
+
+#carouselButton {
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+}
+
+.navbar-dark {
+  background-color: black; 
+}
+.row{
+  margin-left: 0px;
+}
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px; }
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px; }
+.row-content_forum_item {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 100px; }
+.footer {
+  background-color: #D1C4E9;
+  margin: 0px auto;
+  padding: 20px 0px; }
+
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: indigo;
+  color: floralwhite; }

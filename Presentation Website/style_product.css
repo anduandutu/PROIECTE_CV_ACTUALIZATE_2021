@@ -1,0 +1,315 @@
+body{ 
+  font: 14px sans-serif;
+  text-align: center; 
+  background-image: url("./background.jpg"); /* The image used */
+  background-repeat: repeat-y; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+.post_dummy_sm{
+  width: 100%;
+  height: 200px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  float: left;
+}
+.carousel {
+  background: #512DA8; }
+  .carousel .carousel-item {
+    height: 300px; }
+    .carousel .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 300px; }
+
+#carouselButton {
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1; }
+
+#main{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.ui-autocomplete-row
+{
+  padding:8px;
+  background-color: #f4f4f4;
+  border-bottom:1px solid #ccc;
+  font-weight:bold;
+}
+.ui-autocomplete-row:hover
+{
+  background-color: #ddd;
+}
+
+.presentation_images{
+	width: 100%;
+	height: 500px;
+}
+
+ul.features{
+  list-style-type: circle;
+  text-align: justify;
+  float: left;
+  background-color: gray;
+  height: 900px;
+}
+
+/* Create two unequal columns that floats next to each other */
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  border: 10px solid #362741;
+  background-color: #362741;
+}
+
+/* Clear floats after the columns */
+.before_menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+form.search button:hover {
+  background: #0b7dda;
+}
+
+.link_buttons{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.new_buttons{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-dark {
+  background-color: black; 
+}
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px; }
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px; }
+
+.footer {
+  background-color: #D1C4E9;
+  margin: 0px auto;
+  padding: 20px 0px; }
+
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: indigo;
+  color: floralwhite; }
+
+.home_page {
+  background-color: rgba(210, 210, 210, 0.5);
+  border: 0.5px #000;
+  width: 100%;
+  display: flex;
+}
+
+.main_page {
+  background-color: rgb(161,82,82);
+  border: 3px solid rgb(40,27,60);
+  padding: 0.5rem;
+  color: #fff;
+  width: 75%;
+  height: auto;
+}
+
+.product_ads{
+  background-color: rgb(161,82,82);
+  border: 3px solid rgb(40,27,60);
+  padding: 0.5rem;
+  color: #fff;
+  width: 25%;
+  height: 100%;
+}
+.post{
+  border : 0.5px solid black;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #58447A;
+  height: 94%;
+  overflow-y:scroll;
+}
+.post_content{
+  max-height: 400px;
+}
+.Photo_Gallery{
+  display: block;
+  position: relative;
+  padding-bottom: 20px;
+}
+.post_image{
+  width: 80px;
+  height: 80px;
+}
+.prod_title{
+	text-align: left;
+	width: 770px;
+	height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.prod_price{
+  text-align: left;
+  width: 770px;
+  height: 20px;
+  padding-top: 40px;
+}
+.prod_description{
+  text-align: justify;
+  width: 770px;
+  min-height: 300px;
+  height: auto;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 0px;
+}
+.p_text{
+	text-align: justify;
+	width: 770px;
+	height: 50px;
+}
+
+.post_dummy{
+	width: 500px;
+	height: 500px;
+	padding: 10px;
+	float: left;
+  border: 5px solid black;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+
+.gallery_image_item{
+  width: 100px;
+  height: 100px;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  height: 100px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 225px;
+}
+
+.path{
+	text-align: left;
+}
+
+.product{
+	width : 220px;
+	height: 230px;
+	position: relative;
+	border:  2px solid black;
+	background-color: white;
+}
+
+.post_product{
+	width: 200px;
+	height: 200px;
+	padding: 10px;
+	float: left;
+}
+
+.product_description{
+	position: absolute;
+	background-color: rgb(124,43,43);
+	font: 30px sans-serif; 
+	width: 220px;
+	left: 0px;
+	bottom: 0px;
+}
+.product_description a:link, .product_description a:visited {
+    color:white;
+}
+
+.title_reviews{
+  text-align: left;
+  text-indent: 10px;
+  font-size: 30px sans-serif;
+  width: 750px;
+}
+
+.review{
+  float: left;
+}
+
+.recenzii,.add_review{
+  background-color: blue;
+  width: 1100px;
+  padding-bottom: 20px;
+  align-self: vertical;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.review{
+  width: 100%;
+  background-color: #372C4D;
+}
+
+.user_name{
+  float: left;
+  text-align: left;
+  color: white;
+  width: 200px;
+  background-color: #372C4D;
+}
+.recenzie{
+  float: left;
+  width: 1100px;
+  height: 100px;
+  resize: vertical;
+  align-content: justify;
+}
+.add_review {
+    margin:0;
+    font-size: 35px;
+    padding: 10px 40px;
+    width: 200px;
+    display: inline-block;
+    vertical-align:top;
+}
